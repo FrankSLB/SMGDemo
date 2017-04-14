@@ -4,7 +4,6 @@ Created on 2017年3月30日
 
 @author: lkl51
 '''
-
 import requests
 # import json
 import MySQLdb
@@ -50,7 +49,6 @@ class Parse:
     def closeConnection(self):
         if self.conn:
             self.conn.close()
-    
     
     def getDataFromCaiYunAPI(self,url):
         data = requests.get(url).json()
